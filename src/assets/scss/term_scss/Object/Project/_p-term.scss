@@ -1,0 +1,544 @@
+.p-term {
+    &-main {
+        padding-top: 1px;
+        margin-top: calc(100vw / 375 * 30);
+    }
+
+    &-content {
+        display: flex;
+        justify-content: center;
+        margin-top: calc(100vw / 375 * 50);
+
+        &__inner {
+            width: calc(100vw / 375 * 343);
+            padding: calc(100vw / 375 * 18) calc(100vw / 375 * 24);
+            background: #FFF5E9;
+            border-radius: calc(100vw / 375 * 24);
+        }
+
+        &__heading {
+            font-weight: 700;
+            font-size: calc(100vw / 375 * 24);
+            line-height: calc(35 / 24);
+            color: #E60A12;
+            text-align: center;
+        }
+
+        &__lead {
+            margin-top: calc(100vw / 375 * 24);
+        }
+
+        &__item {
+            margin-top: calc(100vw / 375 * 24);
+
+            &__heading {
+                font-weight: 700;
+                font-size: calc(100vw / 375 * 16);
+            }
+
+            &__text {
+                margin-top: calc(100vw / 375 * 5);
+            }
+
+            &__list01 {
+                &__item {
+                    position: relative;
+                    padding-left: calc(100vw / 375 * 20);
+                    margin-top: calc(100vw / 375 * 5);
+
+                    &::before {
+                        content: "";
+                        display: block;
+                        width: calc(100vw / 375 * 16);
+                        height: calc(100vw / 375 * 16);
+                        background-image: url('../img/common/list_icon.png');
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        top: calc(100vw / 375 * 6);
+                        left: 0;
+                    }
+                }
+
+                &__text {
+                    margin-top: calc(100vw / 375 * 5);
+
+                    a {
+                        color: #5E3516 !important;
+                        word-break: break-all;
+                    }
+                }
+            }
+
+            &__list02 {
+                &__item {
+                    position: relative;
+                    padding-left: calc(100vw / 375 * 20);
+                    margin-top: calc(100vw / 375 * 5);
+
+                    &::before {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    &:nth-of-type(1) {
+                        &::before {
+                            content: "①";
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        &::before {
+                            content: "②";
+                        }
+                    }
+
+                    &:nth-of-type(3) {
+                        &::before {
+                            content: "③";
+                        }
+                    }
+                }
+            }
+
+            &__list03 {
+                &__item {
+                    position: relative;
+                    padding-left: calc(100vw / 375 * 22);
+                    margin-top: calc(100vw / 375 * 5);
+
+                    &::before {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    &:nth-of-type(1) {
+                        &::before {
+                            content: "(1)";
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        &::before {
+                            content: "(2)";
+                        }
+                    }
+
+                    &:nth-of-type(3) {
+                        &::before {
+                            content: "(3)";
+                        }
+                    }
+                }
+
+                &__text {
+                    margin-top: calc(100vw / 375 * 5);
+                }
+            }
+
+            &__remarks {
+                &__item {
+                    position: relative;
+                    padding-left: calc(100vw / 375 * 14);
+                    font-size: calc(100vw / 375 * 12);
+                    line-height: 1.7;
+                    margin-top: calc(100vw / 375 * 5);
+
+                    &::before {
+                        content: "※";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &-button {
+        position: relative;
+        z-index: 10;
+
+        &__link {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            width: calc(100vw / 375 * 290);
+            height: calc(100vw / 375 * 69);
+        }
+
+        &__main {
+            width: calc(100vw / 375 * 285);
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            &__text {
+                font-weight: 700;
+                font-size: calc(100vw / 375 * 18);
+                color: #5E3516;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50% , -54%);
+                white-space: nowrap;
+            }
+        }
+
+        &__bg {
+            width: calc(100vw / 375 * 285);
+            height: calc(100vw / 375 * 64);
+            background: #5E3516;
+            border-radius: calc(100vw / 375 * 17);
+        }
+    }
+
+    &-button02 {
+        position: relative;
+
+        &__link {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            width: calc(100vw / 375 * 230);
+            height: calc(100vw / 375 * 59);
+        }
+
+        &__main {
+            width: calc(100vw / 375 * 226);
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            &__text {
+                font-weight: 700;
+                font-size: calc(100vw / 375 * 14);
+                color: #5E3516;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50% , -52%);
+                white-space: nowrap;
+            }
+        }
+
+        &__bg {
+            width: calc(100vw / 375 * 226);
+            height: calc(100vw / 375 * 54);
+            background: #5E3516;
+            border-radius: calc(100vw / 375 * 16);
+        }
+    }
+
+    &-buttonwrap01 {
+        display: flex;
+        justify-content: center;
+        margin-top: calc(100vw / 375 * 40);
+    }
+
+    &-buttonwrap02 {
+        display: flex;
+        justify-content: center;
+        margin-top: calc(100vw / 375 * 30);
+        padding-bottom: calc(100vw / 375 * 30);
+        position: relative;
+        z-index: 10;
+    }
+}
+
+@media print, (min-width: 768px) {
+    .p-term {
+        &-main {
+            margin-top: calc(100vw / 1560 * 30);
+        }
+
+        &-content {
+            margin-top: calc(100vw / 1560 * 1.6 * 50);
+    
+            &__inner {
+                width: calc(100vw / 1560 * 1.6 * 343);
+                padding: calc(100vw / 1560 * 1.6 * 18) calc(100vw / 1560 * 1.6 * 24);
+                border-radius: calc(100vw / 1560 * 1.6 * 24);
+            }
+    
+            &__heading {
+                font-size: calc(100vw / 1560 * 1.6 * 24);
+            }
+    
+            &__lead {
+                margin-top: calc(100vw / 1560 * 1.6 * 24);
+            }
+    
+            &__item {
+                margin-top: calc(100vw / 1560 * 1.6 * 24);
+    
+                &__heading {
+                    font-size: calc(100vw / 1560 * 1.6 * 16);
+                }
+    
+                &__text {
+                    margin-top: calc(100vw / 1560 * 1.6 * 5);
+                }
+    
+                &__list01 {
+                    &__item {
+                        padding-left: calc(100vw / 1560 * 1.6 * 20);
+                        margin-top: calc(100vw / 1560 * 1.6 * 5);
+    
+                        &::before {
+                            width: calc(100vw / 1560 * 1.6 * 16);
+                            height: calc(100vw / 1560 * 1.6 * 16);
+                            top: calc(100vw / 1560 * 1.6 * 6);
+                        }
+                    }
+    
+                    &__text {
+                        margin-top: calc(100vw / 1560 * 1.6 * 5);
+                    }
+                }
+    
+                &__list02 {
+                    &__item {
+                        padding-left: calc(100vw / 1560 * 1.6 * 20);
+                        margin-top: calc(100vw / 1560 * 1.6 * 5);
+                    }
+                }
+    
+                &__list03 {
+                    &__item {
+                        padding-left: calc(100vw / 1560 * 1.6 * 22);
+                        margin-top: calc(100vw / 1560 * 1.6 * 5);
+                    }
+    
+                    &__text {
+                        margin-top: calc(100vw / 1560 * 1.6 * 5);
+                    }
+                }
+    
+                &__remarks {
+                    &__item {
+                        padding-left: calc(100vw / 1560 * 1.6 * 14);
+                        font-size: calc(100vw / 1560 * 1.6 * 12);
+                        margin-top: calc(100vw / 1560 * 1.6 * 5);
+                    }
+                }
+            }
+        }
+
+        &-button {
+            &__link {
+                width: calc(100vw / 1560 * 1.6 * 290);
+                height: calc(100vw / 1560 * 1.6 * 69);
+
+                &:hover {
+                    .p-term-button__main {
+                        top: calc(100vw / 1560 * 1.6 * 2);
+                        left: calc(100vw / 1560 * 1.6 * 2);
+                    }
+                }
+            }
+    
+            &__main {
+                width: calc(100vw / 1560 * 1.6 * 285);
+                transition: 0.1s;
+    
+                &__text {
+                    font-size: calc(100vw / 1560 * 1.6 * 18);
+                }
+            }
+    
+            &__bg {
+                width: calc(100vw / 1560 * 1.6 * 285);
+                height: calc(100vw / 1560 * 1.6 * 64);
+                border-radius: calc(100vw / 1560 * 1.6 * 17);
+            }
+        }
+    
+        &-button02 {
+            &__link {
+                width: calc(100vw / 1560 * 1.6 * 230);
+                height: calc(100vw / 1560 * 1.6 * 59);
+
+                &:hover {
+                    .p-term-button02__main {
+                        top: calc(100vw / 1560 * 1.6 * 1);
+                        left: calc(100vw / 1560 * 1.6 * 1);
+                    }
+                }
+            }
+    
+            &__main {
+                width: calc(100vw / 1560 * 1.6 * 226);
+                transition: 0.1s;
+    
+                &__text {
+                    font-size: calc(100vw / 1560 * 1.6 * 14);
+                }
+            }
+    
+            &__bg {
+                width: calc(100vw / 1560 * 1.6 * 226);
+                height: calc(100vw / 1560 * 1.6 * 54);
+                border-radius: calc(100vw / 1560 * 1.6 * 16);
+            }
+        }
+    
+        &-buttonwrap01 {
+            margin-top: calc(100vw / 1560 * 1.6 * 40);
+        }
+    
+        &-buttonwrap02 {
+            margin-top: calc(100vw / 1560 * 1.6 * 30);
+            padding-bottom: calc(100vw / 1560 * 1.6 * 30);
+        }
+    }
+}
+
+@media print, (min-width: 1560px) {
+    .p-term {
+        &-main {
+            margin-top: 30px;
+        }
+
+        &-content {
+            margin-top: calc(1.6 * 50px);
+    
+            &__inner {
+                width: calc(1.6 * 343px);
+                padding: calc(1.6 * 18px) calc(1.6 * 24px);
+                border-radius: calc(1.6 * 24px);
+            }
+    
+            &__heading {
+                font-size: calc(1.6 * 24px);
+            }
+    
+            &__lead {
+                margin-top: calc(1.6 * 24px);
+            }
+    
+            &__item {
+                margin-top: calc(1.6 * 24px);
+    
+                &__heading {
+                    font-size: calc(1.6 * 16px);
+                }
+    
+                &__text {
+                    margin-top: calc(1.6 * 5px);
+                }
+    
+                &__list01 {
+                    &__item {
+                        padding-left: calc(1.6 * 20px);
+                        margin-top: calc(1.6 * 5px);
+    
+                        &::before {
+                            width: calc(1.6 * 16px);
+                            height: calc(1.6 * 16px);
+                            top: calc(1.6 * 6px);
+                        }
+                    }
+    
+                    &__text {
+                        margin-top: calc(1.6 * 5px);
+                    }
+                }
+    
+                &__list02 {
+                    &__item {
+                        padding-left: calc(1.6 * 20px);
+                        margin-top: calc(1.6 * 5px);
+                    }
+                }
+    
+                &__list03 {
+                    &__item {
+                        padding-left: calc(1.6 * 22px);
+                        margin-top: calc(1.6 * 5px);
+                    }
+    
+                    &__text {
+                        margin-top: calc(1.6 * 5px);
+                    }
+                }
+    
+                &__remarks {
+                    &__item {
+                        padding-left: calc(1.6 * 14px);
+                        font-size: calc(1.6 * 12px);
+                        margin-top: calc(1.6 * 5px);
+                    }
+                }
+            }
+        }
+
+        &-button {
+            &__link {
+                width: calc(1.6 * 290px);
+                height: calc(1.6 * 69px);
+
+                &:hover {
+                    .p-term-button__main {
+                        top: calc(1.6 * 2px);
+                        left: calc(1.6 * 2px);
+                    }
+                }
+            }
+    
+            &__main {
+                width: calc(1.6 * 285px);
+    
+                &__text {
+                    font-size: calc(1.6 * 18px);
+                }
+            }
+    
+            &__bg {
+                width: calc(1.6 * 285px);
+                height: calc(1.6 * 64px);
+                border-radius: calc(1.6 * 17px);
+            }
+        }
+    
+        &-button02 {
+            &__link {
+                width: calc(1.6 * 230px);
+                height: calc(1.6 * 59px);
+
+                &:hover {
+                    .p-term-button02__main {
+                        top: calc(1.6 * 1px);
+                        left: calc(1.6 * 1px);
+                    }
+                }
+            }
+    
+            &__main {
+                width: calc(1.6 * 226px);
+    
+                &__text {
+                    font-size: calc(1.6 * 14px);
+                }
+            }
+    
+            &__bg {
+                width: calc(1.6 * 226px);
+                height: calc(1.6 * 54px);
+                border-radius: calc(1.6 * 16px);
+            }
+        }
+    
+        &-buttonwrap01 {
+            margin-top: calc(1.6 * 40px);
+        }
+    
+        &-buttonwrap02 {
+            margin-top: calc(1.6 * 30px);
+            padding-bottom: calc(1.6 * 30px);
+        }
+    }
+}

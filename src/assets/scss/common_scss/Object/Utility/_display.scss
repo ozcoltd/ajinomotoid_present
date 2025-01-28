@@ -1,0 +1,29 @@
+.u-d--none--sp {
+    display: none !important;
+}
+
+.u-d--none02--sp {
+    display: none !important;
+}
+
+.u-d--none03--sp {
+    display: none !important;
+}
+
+@media print, (min-width: 768px){
+    .u-d--none--pc {
+        display: none !important;
+    }
+
+    .u-d--none--sp {
+        display: inline !important;
+    }
+
+    .u-d--none02--sp {
+        display: block !important;
+    }
+
+    .u-d--none03--sp {
+        display: flex !important;
+    }
+}

@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Zen Kaku Gothic Antique", serif;
+    font-weight: 500;
+    font-size: calc(100vw / 375 * 16);
+    line-height: 1.8;
+    color: #5E3516;
+
+    &.fixed {
+        overflow-y: hidden;
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+
+    &.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+@media print, (min-width: 768px){
+    body {
+        font-size: calc(100vw / 1560 * 1.6 * 16);
+    }
+
+    a {
+        &[href*="tel:"] {
+            pointer-events: none;
+        }
+    }
+}
+
+@media print, (min-width: 1560px){
+    body {
+        font-size: calc(1.6 * 16px);
+    }
+}

@@ -1,0 +1,111 @@
+@keyframes info_animation01 {
+    0% {transform: translate(152% , 180%) scale(1 , 1); opacity: 0;}
+    60% {transform: translate(0% , 0%) scale(1 , 1.1);}
+    80% {transform: translate(0% , 0%) scale(1 , 1.2);}
+    90% {transform: translate(0% , 0%) scale(1.1 , 0.8);}
+    100% {transform: translate(0% , 0%) scale(1 , 1); opacity: 1;}
+}
+
+@keyframes info_animation02 {
+    0% {transform: translate(66% , 184%) scale(1 , 1); opacity: 0;}
+    60% {transform: translate(0% , 0%) scale(1 , 1.1)}
+    80% {transform: translate(0% , 0%) scale(1 , 1.2)}
+    90% {transform: translate(0% , 0%) scale(1.1 , 0.8)}
+    100% {transform: translate(0% , 0%) scale(1 , 1); opacity: 1;}
+}
+
+@keyframes info_animation03 {
+    0% {transform: translate(-28% , 194%) scale(1 , 1); opacity: 0;}
+    60% {transform: translate(0% , 0%) scale(1 , 1.1)}
+    80% {transform: translate(0% , 0%) scale(1 , 1.2)}
+    90% {transform: translate(0% , 0%) scale(1.1 , 0.8)}
+    100% {transform: translate(0% , 0%) scale(1 , 1); opacity: 1;}
+}
+
+@keyframes info_animation04 {
+    0% {transform: translate(-119% , 191%) scale(1 , 1); opacity: 0;}
+    60% {transform: translate(0% , 0%) scale(1 , 1.1)}
+    80% {transform: translate(0% , 0%) scale(1 , 1.2)}
+    90% {transform: translate(0% , 0%) scale(1.1 , 0.8)}
+    100% {transform: translate(0% , 0%) scale(1 , 1); opacity: 1;}
+}
+
+@keyframes info_animation05 {
+    0% {transform: translate(96% , 98%) scale(1 , 1); opacity: 0;}
+    60% {transform: translate(0% , 0%) scale(1 , 1.1)}
+    80% {transform: translate(0% , 0%) scale(1 , 1.2)}
+    90% {transform: translate(0% , 0%) scale(1.1 , 0.8)}
+    100% {transform: translate(0% , 0%) scale(1 , 1); opacity: 1;}
+}
+
+@keyframes info_animation06 {
+    0% {transform: translate(0% , 92%) scale(1 , 1); opacity: 0;}
+    60% {transform: translate(0% , 0%) scale(1 , 1.1)}
+    80% {transform: translate(0% , 0%) scale(1 , 1.2)}
+    90% {transform: translate(0% , 0%) scale(1.1 , 0.8)}
+    100% {transform: translate(0% , 0%) scale(1 , 1); opacity: 1;}
+}
+
+@keyframes info_animation07 {
+    0% {transform: translate(-111% , 93%) scale(1 , 1); opacity: 0;}
+    60% {transform: translate(0% , 0%) scale(1 , 1.1)}
+    80% {transform: translate(0% , 0%) scale(1 , 1.2)}
+    90% {transform: translate(0% , 0%) scale(1.1 , 0.8)}
+    100% {transform: translate(0% , 0%) scale(1 , 1); opacity: 1;}
+}
+
+@keyframes info_animation08 {
+    0%{transform: rotate(0deg); opacity: 0;}
+    12%{transform: rotate(20deg); opacity: 1;}
+    27%{transform: rotate(-15deg); opacity: 1;}
+    38%{transform: rotate(10deg); opacity: 1;}
+    50%{transform: rotate(-5deg); opacity: 1;}
+    100%{transform: rotate(0deg); opacity: 1;}
+}
+
+@keyframes info_animation09 {
+    0%{transform: translate(20% , 20%) rotate(20deg); opacity: 0;}
+    100%{transform: translate(0% , 0%) rotate(0deg); opacity: 1;}
+}
+
+@keyframes info_animation10 {
+    0%{transform: translate(10% , 10%) rotate(10deg); opacity: 0;}
+    100%{transform: translate(0% , 0%) rotate(0deg); opacity: 1;}
+}
+
+@keyframes info_animation11 {
+    0%{transform: translate(-10% , 10%) rotate(-10deg); opacity: 0;}
+    100%{transform: translate(0% , 0%) rotate(0deg); opacity: 1;}
+}
+
+@keyframes info_animation12 {
+    0%{transform: translate(-20% , 20%) rotate(-20deg); opacity: 0;}
+    100%{transform: translate(0% , 0%) rotate(0deg); opacity: 1;}
+}
+
+@keyframes info_animation13 {
+    0%{transform: rotateY(-180deg); opacity: 0;}
+    100%{transform: rotate(0deg); opacity: 1;}
+}
+
+@keyframes info_animation14 {
+    0%{transform: translateY(-20%); opacity: 0;}
+    100%{transform: translateY(0%); opacity: 1;}
+}
+
+@keyframes info_animation15 {
+    0%{transform: rotate(10deg);}
+    50%{transform: rotate(20deg);}
+    70%{transform: rotate(-5deg);}
+    100%{transform: rotate(0deg);}
+}
+
+@keyframes info_animation16 {
+    0%{transform: translate(40% , 40%) rotate(-20deg); opacity: 0;}
+    100%{transform: translate(0% , 0%) rotate(0deg); opacity: 1;}
+}
+
+@keyframes info_animation17 {
+    0%{transform: translate(30% , 30%) rotate(-10deg); opacity: 0;}
+    100%{transform: translate(0% , 0%) rotate(0deg); opacity: 1;}
+}

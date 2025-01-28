@@ -1,0 +1,75 @@
+.l {
+    &-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    &-main {
+        margin-top: calc(100vw / 375 * 60);
+        position: relative;
+    }
+
+    &-wrapper {
+        &__left {
+            display: none;
+        }
+
+        &__right {
+            background-image: url('../img/common/bg_mask.png');
+            background-size: 100%;
+            background-position: top center;
+            background-repeat: repeat;
+        }
+    }
+}
+
+@media print, (min-width: 768px) {
+    .l {
+        &-main {
+            margin-top: calc(100vw / 1560 * 80);
+        }
+
+        &-wrapper {
+            display: flex;
+            padding-right: calc(100vw / 1560 * 1.142 * 30);
+
+            &__left {
+                display: block;
+                flex-grow: 1;
+                position: sticky;
+                top: 0;
+                height: 100vh;
+            }
+
+            &__right {
+                width: calc(100vw / 1560 * 1.6 * 375);
+                flex-shrink: 0;
+                box-shadow: 0 0 calc(100vw / 1560 * 1.142 * 25) rgba(0, 0, 0, 0.25);
+                position: relative;
+                z-index: 10;
+            }
+        }
+    }
+}
+
+@media print, (min-width: 1560px) {
+    .l {
+        &-main {
+            margin-top: 80px;
+        }
+
+        &-wrapper {
+            width: 1560px;
+            margin: 0 auto;
+            padding-right: calc(1.142 * 30px);
+
+            &__right {
+                width: calc(1.6 * 375px);
+                box-shadow: 0 0 calc(1.142 * 25px) rgba(0, 0, 0, 0.25);
+            }
+        }
+    }
+}
