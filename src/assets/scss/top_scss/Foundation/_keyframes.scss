@@ -109,3 +109,11 @@
     0%{transform: translate(30% , 30%) rotate(-10deg); opacity: 0;}
     100%{transform: translate(0% , 0%) rotate(0deg); opacity: 1;}
 }
+
+@keyframes info_animation18 {
+    0% {transform: translate(-111% , 93%) scale(1 , 1); opacity: 0;}
+    60% {transform: translate(0% , 0%) scale(1 , 1.1)}
+    80% {transform: translate(0% , 0%) scale(1 , 1.2)}
+    90% {transform: translate(0% , 0%) scale(1.1 , 0.8)}
+    100% {transform: translate(0% , 0%) scale(1 , 1); opacity: 1;}
+}
