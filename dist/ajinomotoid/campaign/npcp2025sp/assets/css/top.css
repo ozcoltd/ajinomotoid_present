@@ -733,7 +733,7 @@
 }
 .p-top-info__intro {
   background: #ffffff;
-  padding-bottom: 5.3333333333vw;
+  padding-bottom: 10.6666666667vw;
   position: relative;
 }
 .p-top-info__intro__heading {
@@ -1380,7 +1380,7 @@
     left: 3.0769230769vw;
   }
   .p-top-info__intro {
-    padding-bottom: 2.0512820513vw;
+    padding-bottom: 4.1025641026vw;
   }
   .p-top-info__intro__heading__title01 {
     gap: 0.8205128205vw;
@@ -1840,7 +1840,7 @@
     left: 48px;
   }
   .p-top-info__intro {
-    padding-bottom: 32px;
+    padding-bottom: 64px;
   }
   .p-top-info__intro__heading__title01 {
     gap: 12.8px;
