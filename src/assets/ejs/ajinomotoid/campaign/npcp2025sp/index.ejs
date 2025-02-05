@@ -20,6 +20,92 @@
 }); %>
 
 <link rel="stylesheet" href="<%- baseDir %>/assets/css/top.css">
+
+<script type="text/javascript">
+    !(function(t, e) {
+        if (void 0 === e[t]) {
+            (e[t] = function() {
+                e[t].clients.push(this),
+                (this._init = [Array.prototype.slice.call(arguments)]);
+            }),
+            (e[t].clients = []);
+
+            for (
+                var r = function(t) {
+                    return function() {
+                        return (
+                        (this["_" + t] = this["_" + t] || []),
+                        this["_" + t].push(Array.prototype.slice.call(arguments)),
+                        this
+                        );
+                    };
+                },
+                s = [
+                    "addRecord",
+                    "blockEvents",
+                    "fetchServerCookie",
+                    "fetchGlobalID",
+                    "fetchUserSegments",
+                    "resetUUID",
+                    "ready",
+                    "setSignedMode",
+                    "setAnonymousMode",
+                    "set",
+                    "trackEvent",
+                    "trackPageview",
+                    "trackClicks",
+                    "unblockEvents"
+                ],
+                n = 0; n < s.length; n++
+            ) {
+                var c = s[n];
+                e[t].prototype[c] = r(c);
+            }
+
+            var o = document.createElement("script");
+
+            (o.type = "text/javascript"),
+            (o.async = !0),
+            (o.src = ("https:" === document.location.protocol ? "https:" : "http:") + "//cdn.treasuredata.com/sdk/2.5/td.min.js");
+
+            var a = document.getElementsByTagName("script")[0];
+
+            a.parentNode.insertBefore(o, a);
+        }
+    })("Treasure", this);
+
+    var td = new Treasure({
+        host: "tokyo.in.treasuredata.com",
+        writeKey: "56/6e00ac2af3f76e1034e18ac0855c8ea0465d83fe",
+        database: "prd_all_pi_t1",
+        startInSignedMode: true,
+        sscDomain: "ajinomoto.co.jp",
+        sscServer: "ssc.ajinomoto.co.jp",
+        useServerSideCookie: true
+    });
+
+    var table = "t_portal_tracking_data";
+
+    td.set("$global", "td_global_id", "td_global_id");
+
+    td.fetchServerCookie(successCallback, errorCallback);
+
+    function fireEvents() {
+        td.trackPageview(table);
+    }
+
+    function successCallback(result) {
+        // result === Server Side Cookie
+        td.set('$global', {
+                td_ssc_id: result
+        });
+        fireEvents();
+    }
+
+    function errorCallback(result) {
+        fireEvents();
+    }
+</script>
 </head>
 <body>
     <div class="c-bg"></div>
@@ -85,17 +171,18 @@
                         </figure>
                         <h2 class="p-top-message__heading">日頃のご愛顧に<br>感謝を込めて。</h2>
                         <div class="p-top-message__inner">
-                            <p class="p-top-message__text">味の素商品および</p>
+                            <p class="p-top-message__text">味の素株式会社の商品および</p>
                             <p class="p-top-message__text">当社サービスをご愛用いただいている</p>
-                            <p class="p-top-message__text">「AJINOMOTO ID」会員の皆様に、</p>
-                            <p class="p-top-message__text">『日々の感謝の気持ち』と</p>
-                            <p class="p-top-message__text">『今後とも変わらぬご厚誼』を</p>
-                            <p class="p-top-message__text">賜れますよう、</p>
+                            <p class="p-top-message__text">「AJINOMOTO ID」会員の皆様に</p>
+                            <p class="p-top-message__text">感謝の気持ちを込めて、</p>
+                            <p class="p-top-message__text">この春発売予定の新商品を</p>
+                            <p class="p-top-message__text">いち早くお楽しみいただける</p>
                             <p class="p-top-message__text">とっておきのキャンペーンを</p>
                             <p class="p-top-message__text">ご用意しました。</p>
                             <p class="p-top-message__text"></p>
                             <p class="p-top-message__text">「AJINOMOTO ID」の</p>
                             <p class="p-top-message__text">ご登録がまだの方も</p>
+                            <p class="p-top-message__text">この機会にぜひご登録いただき、</p>
                             <p class="p-top-message__text">新しいおいしさを</p>
                             <p class="p-top-message__text">体験していただければ幸いです。</p>
                             <p class="p-top-message__text">皆様のご応募を心より</p>

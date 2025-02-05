@@ -20,6 +20,92 @@
 }); %>
 
 <link rel="stylesheet" href="<%- baseDir %>/assets/css/term.css">
+
+<script type="text/javascript">
+    !(function(t, e) {
+        if (void 0 === e[t]) {
+            (e[t] = function() {
+                e[t].clients.push(this),
+                (this._init = [Array.prototype.slice.call(arguments)]);
+            }),
+            (e[t].clients = []);
+
+            for (
+                var r = function(t) {
+                    return function() {
+                        return (
+                        (this["_" + t] = this["_" + t] || []),
+                        this["_" + t].push(Array.prototype.slice.call(arguments)),
+                        this
+                        );
+                    };
+                },
+                s = [
+                    "addRecord",
+                    "blockEvents",
+                    "fetchServerCookie",
+                    "fetchGlobalID",
+                    "fetchUserSegments",
+                    "resetUUID",
+                    "ready",
+                    "setSignedMode",
+                    "setAnonymousMode",
+                    "set",
+                    "trackEvent",
+                    "trackPageview",
+                    "trackClicks",
+                    "unblockEvents"
+                ],
+                n = 0; n < s.length; n++
+            ) {
+                var c = s[n];
+                e[t].prototype[c] = r(c);
+            }
+
+            var o = document.createElement("script");
+
+            (o.type = "text/javascript"),
+            (o.async = !0),
+            (o.src = ("https:" === document.location.protocol ? "https:" : "http:") + "//cdn.treasuredata.com/sdk/2.5/td.min.js");
+
+            var a = document.getElementsByTagName("script")[0];
+
+            a.parentNode.insertBefore(o, a);
+        }
+    })("Treasure", this);
+
+    var td = new Treasure({
+        host: "tokyo.in.treasuredata.com",
+        writeKey: "56/6e00ac2af3f76e1034e18ac0855c8ea0465d83fe",
+        database: "prd_all_pi_t1",
+        startInSignedMode: true,
+        sscDomain: "ajinomoto.co.jp",
+        sscServer: "ssc.ajinomoto.co.jp",
+        useServerSideCookie: true
+    });
+
+    var table = "t_portal_tracking_data";
+
+    td.set("$global", "td_global_id", "td_global_id");
+
+    td.fetchServerCookie(successCallback, errorCallback);
+
+    function fireEvents() {
+        td.trackPageview(table);
+    }
+
+    function successCallback(result) {
+        // result === Server Side Cookie
+        td.set('$global', {
+                td_ssc_id: result
+        });
+        fireEvents();
+    }
+
+    function errorCallback(result) {
+        fireEvents();
+    }
+</script>
 </head>
 <body>
     <div class="c-bg"></div>
